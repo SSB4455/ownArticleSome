@@ -1,0 +1,29 @@
+import os
+
+import tinify
+from PIL import Image
+
+
+path = "\\pp" # 图片存放的路径
+
+
+try:
+    tinify.key = ""
+    tinify.validate()
+except tinify.Error as e:
+    print("Validation of API key failed.")
+    pass
+
+for dirpath, dirs, files in os.walk(path):
+    for file in files:
+        imgpath = os.path.join(dirpath, file)
+        try:
+            with Image.open(imgpath) as img:
+                print(img.size)
+                print(tinify.compression_count, " compressing ...", imgpath)
+                #try:
+                    #tinify.from_file(imgpath).to_file(imgpath)
+                #except :
+                    #pass
+        except OSError as e:
+            pass

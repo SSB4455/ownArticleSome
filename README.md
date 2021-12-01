@@ -18,7 +18,8 @@
 ————————————2021————————————
 
 - [BleHandleSimple][10](3月)
-- [C#版万年历源码][11]_参考CSDN[12] (10月)
+- [C#版万年历源码][11]_参考[CSDN][12] (10月)
+- [批量图片自动在线压缩Python][13](12月)
 
 ----------
 
@@ -37,3 +38,4 @@
  [10]: https://github.com/SSB4455/BleHandleSimple
  [11]: https://github.com/SSB4455/ownArticleSome/ChineseCalendar.cs
  [12]: https://blog.csdn.net/kinglearnjava/article/details/43733377
+ [13]: https://github.com/SSB4455/ownArticleSome/TinifyPicture.python
